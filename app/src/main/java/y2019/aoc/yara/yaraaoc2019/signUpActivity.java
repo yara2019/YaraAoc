@@ -8,7 +8,7 @@ import android.widget.EditText;
 public class signUpActivity extends AppCompatActivity {
     //1. properties defenition
     EditText editTextEmail , editTextPassword ;
-    Button   buttonSignUp ;
+    Button signUp ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,9 @@ public class signUpActivity extends AppCompatActivity {
         //2. initialize properties
         editTextEmail = findViewById(R.id.editTextEmail) ;
         editTextPassword = findViewById(R.id.editTextPassword) ;
-        
+
+
+
 
 
 

@@ -5,20 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/sloth"
     tools:context=".WelcomeActivity">
 
     <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="100dp"
+        android:lineSpacingExtra="36sp"
         android:text="Welcome To Our World"
         tools:layout_editor_absoluteX="169dp"
         tools:layout_editor_absoluteY="119dp" />
 
     <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="wrap_content"
+        android:id="@+id/meet"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:lineSpacingExtra="36sp"
         android:text="Meet A Few Members"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="149dp" />
