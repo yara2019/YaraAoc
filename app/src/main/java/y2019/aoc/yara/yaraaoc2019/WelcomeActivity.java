@@ -1,6 +1,8 @@
 package y2019.aoc.yara.yaraaoc2019;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,13 +19,6 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-
-
-
-
-
-
-
     }
 
     //presents the selected menu layout
@@ -39,8 +34,20 @@ public class WelcomeActivity extends AppCompatActivity {
         if(item.getItemId() == R.id.more_info){
 
         }else if(item.getItemId() == R.id.log_out){
-            Intent k = new Intent(this , LogInActivity.class);
-            startActivity(k);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Are You Sure You Want To Exit");
+            builder.setCancelable(true);
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent k = new Intent(WelcomeActivity.this , LogInActivity.class);
+                    startActivity(k);
+                }
+            });
+            builder.setNegativeButton("No" , null);
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
         }
         return super.onOptionsItemSelected(item);
     }
