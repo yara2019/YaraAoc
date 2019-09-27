@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/yellow2"
+
     tools:context=".WelcomeActivity">
 
     <TextView
@@ -31,4 +32,29 @@
         android:textSize="25dp"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="149dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="99dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/monkey" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="163dp"
+        android:layout_height="169dp"
+        app:srcCompat="@drawable/dogs" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="271dp"
+        android:layout_height="167dp"
+        app:srcCompat="@drawable/bunnies" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="Next" />
+
 </LinearLayout>
