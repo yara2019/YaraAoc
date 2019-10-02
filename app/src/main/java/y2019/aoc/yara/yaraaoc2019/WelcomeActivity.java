@@ -7,10 +7,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class WelcomeActivity extends AppCompatActivity {
+
+
+public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
+
     //componenets
+    Button buttonNext;
+
+
 
 
 
@@ -18,8 +26,12 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        buttonNext = findViewById(R.id.buttonNext);
+        buttonNext.setOnClickListener(this);
+
 
     }
+
 
     //presents the selected menu layout
     @Override
@@ -50,5 +62,13 @@ public class WelcomeActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == buttonNext){
+            Intent i = new Intent(this , List.class);
+            startActivity(i);
+        }
     }
 }
