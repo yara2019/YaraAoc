@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".List"></activity>
+        <activity android:name=".MonkeyActivity"></activity>
+        <activity android:name=".RabbitActivity" />
+        <activity android:name=".DogActivity" />
+        <activity android:name=".CatActivity" />
+        <activity android:name=".ListActivity" />
         <activity android:name=".signUpActivity" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".MainActivity" />

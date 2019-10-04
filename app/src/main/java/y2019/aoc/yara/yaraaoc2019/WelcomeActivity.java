@@ -9,8 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-
 
 
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
@@ -67,7 +65,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         if (v == buttonNext){
-            Intent i = new Intent(this , List.class);
+            Intent i = new Intent(this , ListActivity.class);
             startActivity(i);
         }
     }

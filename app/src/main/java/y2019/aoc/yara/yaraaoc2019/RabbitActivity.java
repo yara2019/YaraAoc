@@ -3,11 +3,11 @@ package y2019.aoc.yara.yaraaoc2019;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class List extends AppCompatActivity {
+public class RabbitActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_rabbit);
     }
 }
