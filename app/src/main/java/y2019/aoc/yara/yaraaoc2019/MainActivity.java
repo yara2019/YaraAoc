@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener , View.OnLongClickListener  {
 
-     Button buttonSignIn , buttonSignUp ;
+    Button buttonSignIn , buttonSignUp ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

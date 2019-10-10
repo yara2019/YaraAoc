@@ -24,7 +24,11 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         animals.add("Cat");
         animals.add("Dog");
         animals.add("Rabbit");
-        animals.add("Monkey");
+        animals.add("Fish");
+        animals.add("Hamster");
+        animals.add("Turtle");
+        animals.add("Snake");
+        animals.add("Chicken");
 
         animalsList = findViewById(R.id.animal_list);
         listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, animals);
@@ -35,31 +39,49 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-        if(id == 0 ){
-            Intent i = new Intent(this , CatActivity.class);
-            startActivity(i);
-        }
-        else {
-            if(id == 1){
-                Intent i = new Intent(this , DogActivity.class);
+        switch (position){
+            case 0:
+                Intent i = new Intent(this , CatActivity.class);
                 startActivity(i);
-            }
-            else {
-                if(id == 2){
-                    Intent i = new Intent(this , RabbitActivity.class);
-                    startActivity(i);
-                }
-                else
-                {
-                    if(id == 3){
-                        Intent i = new Intent(this , MonkeyActivity.class);
-                        startActivity(i);
-                    }
-                }
-            }
+                break;
+            case 1:
+                Intent i1 = new Intent(this, DogActivity.class);
+                startActivity(i1);
+                break;
+            case 2:
+                Intent i2 = new Intent (this, RabbitActivity.class);
+                startActivity(i2);
+                break;
+            case 3:
+                Intent i3 = new Intent(this, FishActivity.class);
+                startActivity(i3);
+                break;
+            case 4:
+                Intent i4 = new Intent(this, HamsterActivity.class);
+                startActivity(i4);
+                break;
+            case 5:
+                Intent i5 = new Intent(this, TurtleActivity.class);
+                startActivity(i5);
+                break;
+            case 6:
+                Intent i6 = new Intent(this, SnakeActivity.class);
+                startActivity(i6);
+                break;
+            case 7:
+                Intent i7 = new Intent(this, ChickenActivity.class);
+                startActivity(i7);
+                break;
+
+
+
         }
-    }
+
+
+
+
+                }
+
 
 
 }

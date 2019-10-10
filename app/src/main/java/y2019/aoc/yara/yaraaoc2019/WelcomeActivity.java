@@ -40,26 +40,27 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        if(item.getItemId() == R.id.more_info){
-
-        }else if(item.getItemId() == R.id.log_out){
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Are You Sure You Want To Exit");
-            builder.setCancelable(true);
-            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Intent k = new Intent(WelcomeActivity.this , LogInActivity.class);
-                    startActivity(k);
-                }
-            });
-            builder.setNegativeButton("No" , null);
-            AlertDialog dialog = builder.create();
-            dialog.show();
-
+        switch (item.getItemId()){
+            case R.id.more_info:
+                break;
+            case R.id.log_out:
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("Are You Sure You Want To Exit ?");
+                builder.setCancelable(true);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent k = new Intent(WelcomeActivity.this , LogInActivity.class);
+                        startActivity(k);
+                    }
+                });
+                builder.setNegativeButton("No", null);
+                AlertDialog dialog = builder.create();
+                dialog.show();
         }
         return super.onOptionsItemSelected(item);
+
+       
     }
 
     @Override
