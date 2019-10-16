@@ -57,10 +57,14 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 builder.setNegativeButton("No", null);
                 AlertDialog dialog = builder.create();
                 dialog.show();
+                break;
+            case R.id.setting:
+                Intent i = new Intent(WelcomeActivity.this , SettingsActivity.class);
+                startActivity(i);
         }
         return super.onOptionsItemSelected(item);
 
-       
+
     }
 
     @Override

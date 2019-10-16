@@ -24,11 +24,12 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         animals.add("Cat");
         animals.add("Dog");
         animals.add("Rabbit");
-        animals.add("Fish");
+        animals.add("Monkey");
         animals.add("Hamster");
         animals.add("Turtle");
         animals.add("Snake");
         animals.add("Chicken");
+        animals.add("Fish");
 
         animalsList = findViewById(R.id.animal_list);
         listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, animals);
@@ -53,7 +54,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(i2);
                 break;
             case 3:
-                Intent i3 = new Intent(this, FishActivity.class);
+                Intent i3 = new Intent(this, MonkeyActivity.class);
                 startActivity(i3);
                 break;
             case 4:
@@ -72,7 +73,10 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
                 Intent i7 = new Intent(this, ChickenActivity.class);
                 startActivity(i7);
                 break;
-
+            case 8 :
+                Intent i8 = new Intent(this, FishActivity.class);
+                startActivity(i8);
+                break;
 
 
         }
@@ -80,7 +84,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
 
-                }
+    }
 
 
 

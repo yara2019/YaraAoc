@@ -23,7 +23,7 @@ public class signUpActivity extends AppCompatActivity implements View.OnClickLis
         buttonSignUp.setOnClickListener(this);
 
 
-        }
+    }
 
 
     @Override
