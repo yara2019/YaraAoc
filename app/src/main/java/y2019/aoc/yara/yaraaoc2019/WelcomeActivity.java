@@ -42,6 +42,8 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.more_info:
+                Intent k = new Intent(this, MoreInformationActivity.class);
+                startActivity(k);
                 break;
             case R.id.log_out:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);

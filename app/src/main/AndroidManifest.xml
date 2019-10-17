@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FishActivity"></activity>
+        <activity android:name=".MoreInformationActivity"></activity>
+        <activity android:name=".FishActivity" />
         <activity android:name=".ChickenActivity" />
         <activity android:name=".SnakeActivity" />
         <activity android:name=".TurtleActivity" />
