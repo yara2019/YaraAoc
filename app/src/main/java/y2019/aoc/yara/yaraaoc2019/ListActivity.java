@@ -6,20 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class ListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener , View.OnClickListener{
 
     ListView animalsList;
     ArrayList<String> animals = new ArrayList<>();
     ArrayAdapter<String> listAdapter;
+    Button buttonBack ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        buttonBack = findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(this);
 
         animals.add("Cat");
         animals.add("Dog");
@@ -87,5 +91,11 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
 
-
+    @Override
+    public void onClick(View v) {
+        if(v == buttonBack){
+            Intent k = new Intent(this, WelcomeActivity.class);
+            startActivity(k);
+        }
+    }
 }
