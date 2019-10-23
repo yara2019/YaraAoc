@@ -21,7 +21,7 @@
         <activity android:name=".DogActivity" />
         <activity android:name=".CatActivity" />
         <activity android:name=".ListActivity" />
-        <activity android:name=".signUpActivity" />
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LogInActivity">

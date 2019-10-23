@@ -16,30 +16,25 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LogInActivity extends AppCompatActivity implements View.OnClickListener {
-
+public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
     //1. properties defenition
-    EditText editTextEmail, editTextPassword;
-    Button buttonLogIn, buttonSignUp;
+    EditText editTextEmail , editTextPassword ;
+    Button buttonSignUp  ;
     private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_sign_up);
         //2. initialize properties
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextPassword);
-        buttonLogIn = findViewById(R.id.buttonLogIn);
-        buttonLogIn.setOnClickListener(this);
+        editTextEmail = findViewById(R.id.editTextEmail) ;
+        editTextPassword = findViewById(R.id.editTextPassword) ;
         buttonSignUp = findViewById(R.id.buttonSignUp);
         buttonSignUp.setOnClickListener(this);
-        // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
+
     }
-
-
     @Override
     public void onStart() {
         super.onStart();
@@ -47,23 +42,23 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         FirebaseUser currentUser = mAuth.getCurrentUser();
         //updateUI(currentUser);
     }
-
-    public void logIn(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email, password)
+    public void signUp(String email , String password){
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Log.d("FirebaseAuth", "signInWithEmail:success");
+                            Log.d("FirebaseAuth", "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             //updateUI(user);
-                            Intent i = new Intent(LogInActivity.this, WelcomeActivity.class);
+                            Intent i = new Intent(SignUpActivity.this , WelcomeActivity.class);
                             startActivity(i);
-                        } else {
+                        }
+                        else {
                             // If sign in fails, display a message to the user.
-                            Log.w("FirebaseAuth", "signInWithEmail:failure", task.getException());
-                            Toast.makeText(LogInActivity.this, "Authentication failed.",
+                            Log.w("FirebaseAuth", "createUserWithEmail:failure", task.getException());
+                            Toast.makeText(SignUpActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
@@ -73,20 +68,11 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                 });
     }
 
+
     @Override
     public void onClick(View v) {
-        if (v == buttonLogIn) {
-            if (editTextPassword.getText().toString().equals("") || editTextEmail.getText().toString().equals("")) {
-                Toast.makeText(this, "Empty Password or Email", Toast.LENGTH_LONG).show();
-            } else {
-                logIn(editTextEmail.getText().toString(), editTextPassword.getText().toString());
-
-            }
-
-
-        } else {
-            Intent i = new Intent(this, SignUpActivity.class);
-            startActivity(i);
+        if(v == buttonSignUp){
+            signUp(editTextEmail.getText().toString(),editTextPassword.getText().toString());
 
         }
 
