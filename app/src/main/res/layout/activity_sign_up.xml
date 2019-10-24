@@ -5,15 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/dog"
     tools:context=".SignUpActivity">
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="123dp" />
 
@@ -21,16 +24,19 @@
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="214dp" />
 
     <Button
         android:id="@+id/buttonSignUp"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Sign Up"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="296dp" />

@@ -7,6 +7,17 @@
     android:orientation="vertical"
     tools:context=".ListActivity">
 
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Back" />
+
+    <ListView
+        android:id="@+id/animal_list"
+        android:layout_width="match_parent"
+        android:layout_height="456dp" />
+
     <TextView
         android:id="@+id/startText"
         android:layout_width="match_parent"
@@ -16,15 +27,4 @@
         android:paddingRight="70dp"
         android:text="Start Your Process"
         android:textSize="35dp" />
-
-    <ListView
-        android:id="@+id/animal_list"
-        android:layout_width="match_parent"
-        android:layout_height="456dp" />
-
-    <Button
-        android:id="@+id/buttonBack"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Back" />
 </LinearLayout>

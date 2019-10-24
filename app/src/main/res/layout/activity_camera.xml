@@ -24,10 +24,10 @@
             android:text="Gallery" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
-            android:layout_height="331dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
 
         <Button
             android:id="@+id/buttonDone"

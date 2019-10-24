@@ -57,7 +57,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("FirebaseAuth", "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            //updateUI(user);
+                            //
                             Intent i = new Intent(LogInActivity.this, WelcomeActivity.class);
                             startActivity(i);
                         } else {
