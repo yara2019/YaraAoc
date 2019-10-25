@@ -7,7 +7,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +32,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         buttonCamera.setOnClickListener(this);
         buttonGallery = findViewById(R.id.buttonGallery);
         buttonGallery.setOnClickListener(this);
-        imageView = findViewById(R.id.imageView);
+        imageView = findViewById(R.id.dogsImage);
         buttonDone = findViewById(R.id.buttonDone);
         buttonDone.setOnClickListener(this);
     }

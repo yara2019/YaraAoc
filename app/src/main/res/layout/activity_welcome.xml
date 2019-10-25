@@ -5,51 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/yellow2"
-
+    android:background="@drawable/nature"
     tools:context=".WelcomeActivity">
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="308dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="100dp"
+        android:layout_marginHorizontal="77dp"
         android:lineSpacingExtra="36sp"
         android:text="Welcome To Our World"
-        android:textColor="#050101"
+        android:textColor="#000000"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="169dp"
         tools:layout_editor_absoluteY="119dp" />
 
     <TextView
         android:id="@+id/meet"
-        android:layout_width="274dp"
+        android:layout_width="308dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="105dp"
-        android:lineSpacingExtra="36sp"
+        android:layout_marginHorizontal="83dp"
         android:text="Meet A Few Members"
         android:textColor="#000000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="149dp" />
+        android:textSize="25dp" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="99dp"
-        android:layout_height="142dp"
-        app:srcCompat="@drawable/monkey" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="163dp"
-        android:layout_height="169dp"
+        android:id="@+id/dogsImage"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:paddingLeft="100dp"
         app:srcCompat="@drawable/dogs" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="271dp"
-        android:layout_height="167dp"
+        android:id="@+id/bunniesImage"
+        android:layout_width="218dp"
+        android:layout_height="143dp"
         app:srcCompat="@drawable/bunnies" />
+
+    <ImageView
+        android:id="@+id/monkeyImage"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        app:srcCompat="@drawable/monkey" />
 
     <Button
         android:id="@+id/buttonNext"
