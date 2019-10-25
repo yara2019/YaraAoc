@@ -5,7 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/nature"
     tools:context=".CatActivity">
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        app:srcCompat="@drawable/cats" />
+
+    <TextView
+        android:id="@+id/catNameText"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Name : Sandy"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/catAgeText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Age : 6 Months"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/catIdText"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="ID : 212483566"
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/buttonContinue"

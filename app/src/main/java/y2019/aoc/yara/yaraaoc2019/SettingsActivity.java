@@ -32,7 +32,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         buttonCamera.setOnClickListener(this);
         buttonGallery = findViewById(R.id.buttonGallery);
         buttonGallery.setOnClickListener(this);
-        imageView = findViewById(R.id.dogsImage);
+        imageView = findViewById(R.id.imageView);
         buttonDone = findViewById(R.id.buttonDone);
         buttonDone.setOnClickListener(this);
     }
@@ -49,6 +49,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
         if(view == buttonGallery){
             Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(i, SELECT_IMAGE);
+
         }
         if(view == buttonDone){
             Intent i = new Intent(this , WelcomeActivity.class);
@@ -70,6 +71,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
             Uri targetUri = data.getData();
             try{
                 bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(targetUri));
+                imageView.setImageBitmap(bitmap);
             }
             catch (FileNotFoundException e){
                 e.printStackTrace();

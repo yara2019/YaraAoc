@@ -5,7 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/nature"
     tools:context=".DogActivity">
+
+    <ImageView
+        android:id="@+id/dogImage"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        app:srcCompat="@drawable/doog" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Name : Sky"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Age : 2 Months "
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="ID : 547896523"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="Golden Retriever"
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/buttonContinue"
