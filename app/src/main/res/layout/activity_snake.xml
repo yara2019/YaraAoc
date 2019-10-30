@@ -8,6 +8,52 @@
     android:background="@drawable/nature"
     tools:context=".SnakeActivity">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        app:srcCompat="@drawable/snake" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Name : Marry"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Age : 4 Months"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="ID : 754821639"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Peaceful"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="Female"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/buttonContinue"
         android:layout_width="match_parent"

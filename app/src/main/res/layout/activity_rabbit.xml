@@ -8,6 +8,44 @@
     android:background="@drawable/nature"
     tools:context=".RabbitActivity">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        app:srcCompat="@drawable/bunnies" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="Name : Ashly And Monna"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Age : 3 Months"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="ID : 635894257"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Females"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/buttonContinue"
         android:layout_width="match_parent"

@@ -11,13 +11,13 @@
     <ImageView
         android:id="@+id/dogImage"
         android:layout_width="match_parent"
-        android:layout_height="309dp"
+        android:layout_height="289dp"
         app:srcCompat="@drawable/doog" />
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="match_parent"
-        android:layout_height="46dp"
+        android:layout_height="41dp"
         android:text="Name : Sky"
         android:textColor="#000000"
         android:textSize="20dp" />
@@ -25,7 +25,7 @@
     <TextView
         android:id="@+id/ageText"
         android:layout_width="match_parent"
-        android:layout_height="46dp"
+        android:layout_height="41dp"
         android:text="Age : 2 Months "
         android:textColor="#000000"
         android:textSize="20dp" />
@@ -33,7 +33,7 @@
     <TextView
         android:id="@+id/idText"
         android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:layout_height="40dp"
         android:text="ID : 547896523"
         android:textColor="#000000"
         android:textSize="20dp" />
@@ -41,8 +41,16 @@
     <TextView
         android:id="@+id/typeText"
         android:layout_width="match_parent"
-        android:layout_height="51dp"
+        android:layout_height="43dp"
         android:text="Golden Retriever"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Male"
         android:textColor="#000000"
         android:textSize="20dp" />
 

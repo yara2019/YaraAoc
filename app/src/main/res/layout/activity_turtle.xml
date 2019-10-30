@@ -8,6 +8,44 @@
     android:background="@drawable/nature"
     tools:context=".TurtleActivity">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        app:srcCompat="@drawable/turtle" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Name : Randy"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Age : 7 Months"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="ID : 475218635"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Male"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/buttonContinue"
         android:layout_width="match_parent"
