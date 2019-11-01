@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="y2019.aoc.yara.yaraaoc2019">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MoreInformationActivity"></activity>
+        <activity android:name=".CallActivity"></activity>
+        <activity android:name=".MoreInformationActivity" />
         <activity android:name=".FishActivity" />
         <activity android:name=".ChickenActivity" />
         <activity android:name=".SnakeActivity" />
