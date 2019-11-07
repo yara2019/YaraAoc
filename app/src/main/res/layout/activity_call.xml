@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/nature"
+    android:background="@drawable/boo"
     tools:context=".CallActivity">
 
     <TextView
         android:id="@+id/finishText"
         android:layout_width="match_parent"
-        android:layout_height="234dp"
+        android:layout_height="179dp"
         android:paddingHorizontal="60dp"
         android:paddingStart="65dp"
         android:paddingVertical="30dp"
@@ -22,7 +22,7 @@
     <Button
         android:id="@+id/buttonCall"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/lawn1"
         android:shadowColor="#A8A5A5"
         android:shadowDx="0"
@@ -35,6 +35,13 @@
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="back" />
+        android:layout_height="49dp"
+        android:background="@drawable/lawn1"
+        android:shadowColor="#A8A5A5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 </LinearLayout>

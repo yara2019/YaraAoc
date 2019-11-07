@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MoreInformationActivity"
-    android:background="@drawable/nature">
+    android:background="@drawable/doo">
 
     <ImageView
         android:id="@+id/imageView8"
