@@ -17,6 +17,13 @@
     <Button
         android:id="@+id/backButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Back" />
+        android:layout_height="40dp"
+        android:background="@drawable/lawn3"
+        android:shadowColor="#A8A5A5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 </LinearLayout>

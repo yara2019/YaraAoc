@@ -30,7 +30,7 @@
         android:shadowRadius="5"
         android:text="Give Us A Call"
         android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonBack"
@@ -43,5 +43,5 @@
         android:shadowRadius="5"
         android:text="back"
         android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 </LinearLayout>

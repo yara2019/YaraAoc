@@ -27,7 +27,7 @@ public class SnakeActivity extends AppCompatActivity implements View.OnClickList
             Intent i = new Intent(this, ListActivity.class);
             startActivity(i);
         }
-        if(v == buttonBack){
+        if(v == buttonContinue){
             Intent i = new Intent(this, CallActivity.class);
             startActivity(i);
         }
