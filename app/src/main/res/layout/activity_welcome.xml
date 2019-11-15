@@ -32,7 +32,7 @@
     <ImageView
         android:id="@+id/dogsImage"
         android:layout_width="match_parent"
-        android:layout_height="171dp"
+        android:layout_height="162dp"
         android:paddingLeft="100dp"
         app:srcCompat="@drawable/dogs" />
 
@@ -45,13 +45,14 @@
     <ImageView
         android:id="@+id/monkeyImage"
         android:layout_width="match_parent"
-        android:layout_height="171dp"
+        android:layout_height="149dp"
         app:srcCompat="@drawable/monkey" />
 
     <Button
         android:id="@+id/buttonNext"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_margin="5dp"
         android:background="@drawable/lawn3"
         android:shadowColor="#A8A5A5"
         android:shadowDx="0"

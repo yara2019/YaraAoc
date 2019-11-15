@@ -42,6 +42,7 @@
         android:id="@+id/buttonContinue"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_margin="5dp"
         android:background="@drawable/lawn2"
         android:shadowColor="#A8A5A5"
         android:shadowDx="0"
@@ -49,12 +50,13 @@
         android:shadowRadius="5"
         android:text="Continue"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_margin="5dp"
         android:background="@drawable/lawn2"
         android:shadowColor="#A8A5A5"
         android:shadowDx="0"
